@@ -3,4 +3,4 @@ MAINTAINER Miguh Ruiz
 
 RUN sudo apt-get update
 RUN sudo apt-get -y install nodejs
-RUN sudo node app.js
+RUN sudo nodejs app.js
