@@ -3,4 +3,6 @@ MAINTAINER Miguh Ruiz
 
 RUN sudo apt-get update
 RUN sudo apt-get -y install nodejs
-RUN sudo nodejs app.js
+RUN sudo apt-get -y install npm
+RUN sudo npm install -g sails
+RUN sudo sails lift
