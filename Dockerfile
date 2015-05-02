@@ -1,9 +1,5 @@
-FROM ubuntu:14.04
+FROM node:slim
 MAINTAINER Miguh Ruiz
 
-RUN sudo apt-get update
-RUN sudo apt-get -y install nodejs
-RUN sudo apt-get -y install npm
-RUN sudo npm install -g npm
-RUN sudo npm install -g sails
-RUN sudo sails lift
+RUN npm install -g sails grunt bower npm-check-updates
+RUN sails lift
